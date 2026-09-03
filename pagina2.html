@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos ZYMOS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css?v=1.0">
+</head>
+<body>
+  <nav style="position:sticky; top:0; z-index:1000; background:#0d6efd; display:flex; justify-content:center; gap:12px; flex-wrap:wrap; padding:12px 16px; box-shadow:0 2px 10px rgba(0,0,0,0.12);">
+    <a href="index.html" style="color:#fff; background:rgba(255,255,255,0.08); border-radius:6px; font-weight:700; padding:8px 12px; text-decoration:none;">Inicio</a>
+    <a href="arma-tu-batido.html" style="color:#fff; background:rgba(255,255,255,0.08); border-radius:6px; font-weight:700; padding:8px 12px; text-decoration:none;">Arma tu batido</a>
+    <a href="pagina2.html" style="color:#fff; background:rgba(255,255,255,0.08); border-radius:6px; font-weight:700; padding:8px 12px; text-decoration:none;">Batidos Listos</a>
+    <a href="pagina3.html" style="color:#fff; background:rgba(255,255,255,0.08); border-radius:6px; font-weight:700; padding:8px 12px; text-decoration:none;">Snacks</a>
+    <span style="position:relative; display:inline-block;">
+      <a href="#" id="contactToggle" style="color:#fff; background:rgba(255,255,255,0.08); border-radius:6px; font-weight:700; padding:8px 12px; text-decoration:none; display:inline-block;">Contacto</a>
+      <span id="contactPanel" style="position:absolute; top:calc(100% + 8px); left:50%; transform:translateX(-50%); min-width:190px; background:#fff; color:#212529; border:1px solid #ddd; padding:10px 14px; border-radius:6px; display:none; box-shadow:0 4px 12px rgba(0,0,0,0.08); z-index:9999;">
+        <strong>MARIA JOSE AMEZQUITA</strong>
+        <span style="display:block; margin-top:6px;">305 425 2988</span>
+      </span>
+    </span>
+    <a href="#" id="openCheckoutModal" style="color:#fff; background:rgba(255,255,255,0.12); border-radius:6px; font-weight:700; padding:8px 12px; text-decoration:none;">Formulario</a>
+  </nav>
+
+  <section class="texto-cuadro">
+    <h1 class="texto-negro">Batidos</h1>
+    <p class="texto-azul">Opciones rápidas con combinaciones ya preparadas para elegir en un instante.</p>
+  </section>
+
+  <section class="producto-grid mb-5">
+    <article class="producto-card" data-product="Frutos Rojos">
+      <img src="./imagenes/smoothie 1.png" alt="Frutos Rojos" class="producto-card-img">
+      <div class="producto-card-info">
+        <h2 class="producto-name">Frutos Rojos</h2>
+        <p class="producto-description">Fresa, arándanos, banano y Yogurt Griego.Fresco, cremoso y naturalmente delicioso.</p>
+        <div class="producto-size-picker" aria-label="Selecciona un tamaño para Frutos Rojos">
+          <button type="button" class="size-option" data-size="S" data-price="$15.000"><span class="size-label">S</span><span class="size-price">$15.000</span></button>
+          <button type="button" class="size-option" data-size="M" data-price="$18.000"><span class="size-label">M</span><span class="size-price">$18.000</span></button>
+          <button type="button" class="size-option" data-size="L" data-price="$22.000"><span class="size-label">L</span><span class="size-price">$22.000</span></button>
+        </div>
+      </div>
+    </article>
+    <article class="producto-card" data-product="Delicia Tropical">
+      <img src="./imagenes/smoothie2.png" alt="Delicia Tropical" class="producto-card-img">
+      <div class="producto-card-info">
+        <h2 class="producto-name">Delicia Tropical</h2>
+        <p class="producto-description">Mango, piña, banano y naranja. Refrescante y lleno de sabor tropical.</p>
+        <div class="producto-size-picker" aria-label="Selecciona un tamaño para Delicia Tropical">
+          <button type="button" class="size-option" data-size="S" data-price="$15.000"><span class="size-label">S</span><span class="size-price">$15.000</span></button>
+          <button type="button" class="size-option" data-size="M" data-price="$18.000"><span class="size-label">M</span><span class="size-price">$18.000</span></button>
+          <button type="button" class="size-option" data-size="L" data-price="$22.000"><span class="size-label">L</span><span class="size-price">$22.000</span></button>
+        </div>
+      </div>
+    </article>
+    <article class="producto-card" data-product="Vitalidad Verde">
+      <img src="./imagenes/smoothie3.png" alt="Vitalidad Verde" class="producto-card-img">
+      <div class="producto-card-info">
+        <h2 class="producto-name">Vitalidad Verde</h2>
+        <p class="producto-description">Espinaca, piña, manzana, banano y jengibre. Fresco y natural.</p>
+        <div class="producto-size-picker" aria-label="Selecciona un tamaño para Vitalidad Verde">
+          <button type="button" class="size-option" data-size="S" data-price="$15.000"><span class="size-label">S</span><span class="size-price">$15.000</span></button>
+          <button type="button" class="size-option" data-size="M" data-price="$18.000"><span class="size-label">M</span><span class="size-price">$18.000</span></button>
+          <button type="button" class="size-option" data-size="L" data-price="$22.000"><span class="size-label">L</span><span class="size-price">$22.000</span></button>
+        </div>
+      </div>
+    </article>
+    <article class="producto-card" data-product="Fresa & Banano">
+      <img src="./imagenes/smoothie4.png" alt="Jugo de fresa" class="producto-card-img">
+      <div class="producto-card-info">
+        <h2 class="producto-name">Fresa & Banano</h2>
+        <p class="producto-description">Fresa y banano con yogur griego. Cremoso, suave y delicioso.</p>
+        <div class="producto-size-picker" aria-label="Selecciona un tamaño para Fresa & Banano">
+          <button type="button" class="size-option" data-size="S" data-price="$15.000"><span class="size-label">S</span><span class="size-price">$15.000</span></button>
+          <button type="button" class="size-option" data-size="M" data-price="$18.000"><span class="size-label">M</span><span class="size-price">$18.000</span></button>
+          <button type="button" class="size-option" data-size="L" data-price="$22.000"><span class="size-label">L</span><span class="size-price">$22.000</span></button>
+        </div>
+      </div>
+    </article>
+    <article class="producto-card" data-product="Detox Verde">
+      <img src="./imagenes/smoothie5.png" alt="Detox verde" class="producto-card-img">
+      <div class="producto-card-info">
+        <h2 class="producto-name">Energía Cítrica</h2>
+        <p class="producto-description">Naranja, mandarina, piña y jengibre. Refrescante y vibrante.</p>
+        <div class="producto-size-picker" aria-label="Selecciona un tamaño para Energía Cítrica">
+          <button type="button" class="size-option" data-size="S" data-price="$15.000"><span class="size-label">S</span><span class="size-price">$15.000</span></button>
+          <button type="button" class="size-option" data-size="M" data-price="$18.000"><span class="size-label">M</span><span class="size-price">$18.000</span></button>
+          <button type="button" class="size-option" data-size="L" data-price="$22.000"><span class="size-label">L</span><span class="size-price">$22.000</span></button>
+        </div>
+      </div>
+    </article>
+    <article class="producto-card" data-product="Boost Energy">
+      <img src="./imagenes/smoothie 2.0.png" alt="Boost energy" class="producto-card-img">
+      <div class="producto-card-info">
+        <h2 class="producto-name">Μόρα & Μούρα</h2>
+        <p class="producto-description">Mora, fresa, arándanos y banano. Cremoso, refrescante y naturalmente dulce.</p>
+        <div class="producto-size-picker" aria-label="Selecciona un tamaño para Açaí & Frutos del Bosque">
+          <button type="button" class="size-option" data-size="S" data-price="$15.000"><span class="size-label">S</span><span class="size-price">$15.000</span></button>
+          <button type="button" class="size-option" data-size="M" data-price="$18.000"><span class="size-label">M</span><span class="size-price">$18.000</span></button>
+          <button type="button" class="size-option" data-size="L" data-price="$22.000"><span class="size-label">L</span><span class="size-price">$22.000</span></button>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <aside class="floating-cart" id="cartSection">
+    <div class="floating-cart-inner">
+      <div class="floating-cart-header">
+        <span>Carrito</span>
+        <button type="button" id="cartClose" class="cart-close" aria-label="Cerrar carrito">×</button>
+      </div>
+      <div class="floating-cart-body">
+        <p class="texto-azul" id="cartText">No hay productos en el carrito todavía.</p>
+      </div>
+    </div>
+  </aside>
+  <button type="button" id="cartToggle" class="cart-toggle-button">Carrito</button>
+  <div id="cartToast" class="cart-toast" aria-live="polite"></div>
+
+  <div id="checkoutModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:2000; align-items:center; justify-content:center; padding:20px;">
+    <div style="background:#fff; width:min(700px, 100%); max-height:90vh; overflow:auto; border-radius:12px; padding:24px; position:relative; box-shadow:0 12px 30px rgba(0,0,0,0.25);">
+      <button type="button" id="closeCheckoutModal" aria-label="Cerrar formulario" style="position:absolute; top:12px; right:12px; border:none; background:#f1f1f1; border-radius:50%; width:34px; height:34px; cursor:pointer; font-size:20px;">×</button>
+      <h2 class="texto-negro secundario" style="margin-top:0;">Datos para la entrega</h2>
+      <form id="checkoutForm" method="post" action="" novalidate>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="nombreCliente" class="form-label">Nombre:</label>
+            <input id="nombreCliente" name="nombre" type="text" class="form-control" placeholder="Escribe tu nombre" required>
+          </div>
+          <div class="col-md-6">
+            <label for="telefonoCliente" class="form-label">Telefono:</label>
+            <input id="telefonoCliente" name="telefono" type="tel" class="form-control" placeholder="Ej: +56 9 1234 5678" required>
+          </div>
+          <div class="col-12">
+            <label for="direccionCliente" class="form-label">Direccion:</label>
+            <input id="direccionCliente" name="direccion" type="text" class="form-control" placeholder="Ej: Calle 123, comuna, ciudad" required>
+          </div>
+          <div class="col-md-6">
+            <label for="metodoPago" class="form-label">Metodo de Pago:</label>
+            <select id="metodoPago" name="metodo_pago" class="form-select" required>
+              <option value="">Selecciona una opción</option>
+              <option value="Transferencia">Transferencia</option>
+              <option value="Efectivo">Efectivo</option>
+              <option value="Tarjeta">Tarjeta</option>
+              <option value="WebPay">WebPay</option>
+            </select>
+          </div>
+        </div>
+        <div class="mt-3 d-flex justify-content-center">
+          <button class="btn btn-success btn-lg" type="submit">Enviar pedido</button>
+        </div>
+        <p id="formMessage" class="mt-3 text-success" style="display:none; font-weight:600;"></p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Usar precio según el tamaño (S=15000, M=18000, L=22000)
+      var basePrice = 0;
+      var fruitButtons = document.querySelectorAll('.custom-option[data-group="fruit"]');
+      var sizeButtons = document.querySelectorAll('.custom-option[data-group="size"]');
+      var addonButtons = document.querySelectorAll('.custom-option[data-group="addon"]');
+      var summaryFruits = document.getElementById('summaryFruits');
+      var summarySize = document.getElementById('summarySize');
+      var summaryAddons = document.getElementById('summaryAddons');
+      var estimatedPrice = document.getElementById('estimatedPrice');
+      var orderSavedMessage = document.getElementById('orderSavedMessage');
+      var lastOrderSection = document.getElementById('lastOrderSection');
+      var lastOrderText = document.getElementById('lastOrderText');
+      var addOrderBtn = document.getElementById('addOrderBtn');
+      var cartKey = 'zymosCart';
+
+      function formatCurrency(value) {
+        if (value === null || value === undefined) value = 0;
+        value = Number(value) || 0;
+        return '$' + value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+      }
+
+      function getCart() {
+        var savedCart = localStorage.getItem(cartKey);
+        var cart = savedCart ? JSON.parse(savedCart) : [];
+        var changed = false;
+        cart = cart.map(function(item) {
+          var price = Number(item.price);
+          var qty = Math.max(1, Number(item.qty) || 1);
+          if (isNaN(price)) price = 0;
+          if (price !== item.price || qty !== item.qty) changed = true;
+          return { name: item.name, price: price, qty: qty };
+        });
+        // Merge duplicates by name+price
+        var merged = [];
+        cart.forEach(function(it) {
+          var key = it.name + '||' + it.price;
+          var found = merged.find(function(m) { return m._key === key; });
+          if (found) {
+            found.qty += it.qty;
+            changed = true;
+          } else {
+            merged.push({ name: it.name, price: it.price, qty: it.qty, _key: key });
+          }
+        });
+        merged.forEach(function(m) { delete m._key; });
+        if (changed) localStorage.setItem(cartKey, JSON.stringify(merged));
+        return merged;
+      }
+
+      function saveCart(cart) {
+        localStorage.setItem(cartKey, JSON.stringify(cart));
+      }
+
+      function addToCart(item) {
+        item.price = Number(item.price) || 0;
+        item.qty = Math.max(1, Number(item.qty) || 1);
+        var cart = getCart();
+        var existing = cart.find(function(cartItem) {
+          return cartItem.name === item.name && Number(cartItem.price) === Number(item.price);
+        });
+        if (existing) {
+          existing.qty += item.qty;
+        } else {
+          cart.push(item);
+        }
+        saveCart(cart);
+        updateCart();
+      }
+
+      function changeCartItem(name, price, delta) {
+        var cart = getCart();
+        var index = cart.findIndex(function(cartItem) {
+          return cartItem.name === name && cartItem.price === price;
+        });
+        if (index === -1) return;
+        cart[index].qty += delta;
+        if (cart[index].qty <= 0) {
+          cart.splice(index, 1);
+        }
+        saveCart(cart);
+        updateCart();
+      }
+
+      function removeCartItem(name, price) {
+        var cart = getCart();
+        cart = cart.filter(function(cartItem) {
+          return !(cartItem.name === name && cartItem.price === price);
+        });
+        saveCart(cart);
+        updateCart();
+      }
+
+      function attachCartButtons() {
+        document.querySelectorAll('.cart-increase-btn').forEach(function(button) {
+          button.addEventListener('click', function() {
+            changeCartItem(button.dataset.name, Number(button.dataset.price), 1);
+          });
+        });
+        document.querySelectorAll('.cart-decrease-btn').forEach(function(button) {
+          button.addEventListener('click', function() {
+            changeCartItem(button.dataset.name, Number(button.dataset.price), -1);
+          });
+        });
+        document.querySelectorAll('.cart-remove-btn').forEach(function(button) {
+          button.addEventListener('click', function() {
+            removeCartItem(button.dataset.name, Number(button.dataset.price));
+          });
+        });
+      }
+
+      function updateCart() {
+        var cart = getCart();
+        var cartText = document.getElementById('cartText');
+        if (!cartText) return;
+        if (!cart.length) {
+          cartText.textContent = 'No hay productos en el carrito todavía.';
+          var cartToggle = document.getElementById('cartToggle');
+          if (cartToggle) cartToggle.innerHTML = 'Carrito';
+          return;
+        }
+
+        var total = 0;
+        var itemCount = 0;
+        var html = '<ul class="list-unstyled">';
+        cart.forEach(function(item) {
+          total += item.price * item.qty;
+          itemCount += item.qty;
+          html += '<li>' +
+            '<strong>' + item.qty + 'x</strong> ' + item.name +
+            ' — Precio unitario: ' + formatCurrency(item.price) +
+            ' — Subtotal: ' + formatCurrency(item.price * item.qty) +
+            ' <div class="cart-item-actions">' +
+            '<button type="button" class="cart-qty-btn cart-decrease-btn" data-name="' + item.name + '" data-price="' + item.price + '">-</button>' +
+            '<button type="button" class="cart-qty-btn cart-increase-btn" data-name="' + item.name + '" data-price="' + item.price + '">+</button>' +
+            '<button type="button" class="cart-remove-btn" data-name="' + item.name + '" data-price="' + item.price + '">Eliminar</button>' +
+            '</div>' +
+            '</li>';
+        });
+        html += '</ul>';
+        html += '<p><strong>Total:</strong> ' + formatCurrency(total) + '</p>';
+        html += '<button type="button" class="btn btn-success cart-buy-btn">Comprar</button>';
+        cartText.innerHTML = html;
+        attachCartButtons();
+        var buyButton = cartText.querySelector('.cart-buy-btn');
+        if (buyButton) {
+          buyButton.addEventListener('click', function() {
+            if (!getCart().length) {
+              alert('Agrega al menos un producto antes de comprar.');
+              return;
+            }
+            toggleCheckoutModal(true);
+          });
+        }
+        var cartToggle = document.getElementById('cartToggle');
+        if (cartToggle) {
+          cartToggle.innerHTML = 'Carrito (' + itemCount + ') - ' + formatCurrency(total);
+        }
+      }
+
+      function openCart() {
+        var cartSection = document.getElementById('cartSection');
+        var cartToggle = document.getElementById('cartToggle');
+        if (!cartSection || !cartToggle) return;
+        cartSection.classList.add('open');
+        cartToggle.textContent = 'Cerrar';
+      }
+
+      function closeCart() {
+        var cartSection = document.getElementById('cartSection');
+        var cartToggle = document.getElementById('cartToggle');
+        if (!cartSection || !cartToggle) return;
+        cartSection.classList.remove('open');
+        cartToggle.textContent = 'Carrito';
+      }
+
+      function toggleCart() {
+        var cartSection = document.getElementById('cartSection');
+        var cartToggle = document.getElementById('cartToggle');
+        if (!cartSection || !cartToggle) return;
+        var isOpen = cartSection.classList.toggle('open');
+        cartToggle.textContent = isOpen ? 'Cerrar' : 'Carrito';
+      }
+
+      function showCartMessage(message) {
+        if (orderSavedMessage) {
+          orderSavedMessage.hidden = false;
+          orderSavedMessage.querySelector('p').textContent = message;
+        }
+      }
+
+      function showCartFeedback(message, isWarning) {
+        var toast = document.getElementById('cartToast');
+        var cartToggle = document.getElementById('cartToggle');
+        if (!toast) return;
+        toast.textContent = message;
+        toast.classList.toggle('warning', !!isWarning);
+        toast.classList.remove('show');
+        void toast.offsetWidth;
+        toast.classList.add('show');
+        if (cartToggle) {
+          cartToggle.classList.remove('cart-pulse');
+          void cartToggle.offsetWidth;
+          cartToggle.classList.add('cart-pulse');
+        }
+      }
+
+      function toggleContactPanel() {
+        var panel = document.getElementById('contactPanel');
+        if (!panel) return;
+        panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
+      }
+
+      var contactToggle = document.getElementById('contactToggle');
+      if (contactToggle) {
+        contactToggle.addEventListener('click', function(event) {
+          event.preventDefault();
+          toggleContactPanel();
+        });
+      }
+
+      var checkoutModal = document.getElementById('checkoutModal');
+      var openCheckoutModal = document.getElementById('openCheckoutModal');
+      var closeCheckoutModal = document.getElementById('closeCheckoutModal');
+      function toggleCheckoutModal(show) {
+        if (!checkoutModal) return;
+        checkoutModal.style.display = show ? 'flex' : 'none';
+      }
+      if (openCheckoutModal) {
+        openCheckoutModal.addEventListener('click', function(event) {
+          event.preventDefault();
+          if (!getCart().length) {
+            alert('Agrega al menos un producto antes de comprar.');
+            return;
+          }
+          toggleCheckoutModal(true);
+        });
+      }
+      if (closeCheckoutModal) {
+        closeCheckoutModal.addEventListener('click', function() {
+          toggleCheckoutModal(false);
+        });
+      }
+      if (checkoutModal) {
+        checkoutModal.addEventListener('click', function(event) {
+          if (event.target === checkoutModal) toggleCheckoutModal(false);
+        });
+      }
+
+      var checkoutForm = document.getElementById('checkoutForm');
+      var formMessage = document.getElementById('formMessage');
+      if (checkoutForm) {
+        checkoutForm.addEventListener('submit', function(event) {
+          event.preventDefault();
+          if (!checkoutForm.checkValidity()) {
+            checkoutForm.reportValidity();
+            return;
+          }
+          var formData = new FormData(checkoutForm);
+          var payload = {};
+          formData.forEach(function(value, key) { payload[key] = value; });
+          localStorage.setItem('zymosOrder', JSON.stringify(payload));
+          if (formMessage) {
+            formMessage.textContent = 'Pedido listo para enviar. Datos guardados correctamente.';
+            formMessage.style.display = 'block';
+          }
+          window.location.href = 'confirmacion.html';
+        });
+      }
+
+      function initializeProductButtons() {
+        document.querySelectorAll('.producto-card').forEach(function(card) {
+          var info = card.querySelector('.producto-card-info');
+          var nameNode = info.querySelector('.producto-name');
+          var sizeButtons = card.querySelectorAll('.size-option');
+          if (!nameNode) return;
+
+          var name = nameNode.textContent.trim();
+          sizeButtons.forEach(function(button) {
+              button.addEventListener('click', function() {
+                sizeButtons.forEach(function(btn) { btn.classList.remove('active'); });
+                button.classList.add('active');
+              });
+          });
+
+          var button = document.createElement('button');
+          button.type = 'button';
+          button.className = 'btn btn-sm btn-primary mt-3 add-product-btn';
+          button.textContent = 'Agregar al carrito';
+          button.addEventListener('click', function() {
+            var selectedSize = card.querySelector('.size-option.active');
+            if (!selectedSize) {
+              showCartFeedback('Debes elegir un tamaño antes de agregar.', true);
+              return;
+            }
+            var rawPrice = selectedSize.dataset.price || selectedSize.getAttribute('data-price') || '';
+            var selectedPrice = Number(rawPrice.toString().replace(/\./g, '').replace(/[^0-9]/g, '')) || 0;
+            var selectedLabel = selectedSize.dataset.size;
+            var cartItemName = name + ' (' + selectedLabel + ')';
+            addToCart({ name: cartItemName, price: selectedPrice, qty: 1 });
+            showCartFeedback('');
+            openCart();
+          });
+          info.appendChild(button);
+        });
+      }
+
+      function updateSummary() {
+        var selectedFruits = Array.from(fruitButtons).filter(function(btn) { return btn.classList.contains('active'); }).map(function(btn) { return btn.dataset.value; });
+        var selectedSizeButton = Array.from(sizeButtons).find(function(btn) { return btn.classList.contains('active'); });
+        var selectedSize = selectedSizeButton ? selectedSizeButton.dataset.value : 'Mediano';
+        var sizePrice = selectedSizeButton ? Number(selectedSizeButton.dataset.price || 0) : 0;
+        var selectedAddons = Array.from(addonButtons).filter(function(btn) { return btn.classList.contains('active'); }).map(function(btn) { return btn.dataset.value; });
+        var addonsPrice = Array.from(addonButtons).filter(function(btn) { return btn.classList.contains('active'); }).reduce(function(total, btn) { return total + Number(btn.dataset.price || 0); }, 0);
+
+        summaryFruits.textContent = selectedFruits.length ? selectedFruits.join(', ') : 'Ninguno';
+        summarySize.textContent = selectedSize;
+        summaryAddons.textContent = selectedAddons.length ? selectedAddons.join(', ') : 'Ninguno';
+        estimatedPrice.textContent = formatCurrency(basePrice + sizePrice + addonsPrice);
+      }
+
+      function saveOrder() {
+        var fruits = Array.from(fruitButtons).filter(function(btn) { return btn.classList.contains('active'); }).map(function(btn) { return btn.dataset.value; });
+        var sizeButton = Array.from(sizeButtons).find(function(btn) { return btn.classList.contains('active'); });
+        var size = sizeButton ? sizeButton.dataset.value : 'Mediano';
+        var addons = Array.from(addonButtons).filter(function(btn) { return btn.classList.contains('active'); }).map(function(btn) { return btn.dataset.value; });
+        var sizePrice = sizeButton ? Number(sizeButton.dataset.price || 0) : 0;
+        var addonsPrice = Array.from(addonButtons).filter(function(btn) { return btn.classList.contains('active'); }).reduce(function(total, btn) { return total + Number(btn.dataset.price || 0); }, 0);
+        var totalPrice = basePrice + sizePrice + addonsPrice;
+
+        var order = {
+          fruits: fruits,
+          size: size,
+          addons: addons,
+          total: totalPrice,
+          createdAt: new Date().toLocaleString()
+        };
+
+        localStorage.setItem('zymosOrder', JSON.stringify(order));
+        addToCart({ name: 'Batido personalizado (' + order.size + ')', price: totalPrice, qty: 1 });
+        orderSavedMessage.hidden = false;
+        orderSavedMessage.querySelector('p').textContent = 'Tu batido personalizado se agregó al carrito.';
+
+        if (lastOrderSection && lastOrderText) {
+          lastOrderSection.hidden = false;
+          lastOrderText.textContent = 'Último pedido: ' + (order.fruits.length ? order.fruits.join(', ') : 'Ninguno') + ' - ' + order.size + ' - Extras: ' + (order.addons.length ? order.addons.join(', ') : 'Ninguno') + ' - Total: ' + formatCurrency(order.total) + ' (' + order.createdAt + ').';
+        }
+      }
+
+      function loadLastOrder() {
+        var saved = localStorage.getItem('zymosOrder');
+        if (saved) {
+          var order = JSON.parse(saved);
+          if (lastOrderSection && lastOrderText) {
+            lastOrderSection.hidden = false;
+            lastOrderText.textContent = 'Último pedido: ' + (order.fruits.length ? order.fruits.join(', ') : 'Ninguno') + ' - ' + order.size + ' - Extras: ' + (order.addons.length ? order.addons.join(', ') : 'Ninguno') + ' - Total: ' + formatCurrency(order.total) + ' (' + order.createdAt + ').';
+          }
+        }
+      }
+
+      Array.from(fruitButtons).forEach(function(button) {
+        button.addEventListener('click', function() {
+          button.classList.toggle('active');
+          updateSummary();
+        });
+      });
+
+      Array.from(sizeButtons).forEach(function(button) {
+        button.addEventListener('click', function() {
+          sizeButtons.forEach(function(btn) { btn.classList.remove('active'); });
+          button.classList.add('active');
+          updateSummary();
+        });
+      });
+
+      Array.from(addonButtons).forEach(function(button) {
+        button.addEventListener('click', function() {
+          button.classList.toggle('active');
+          updateSummary();
+        });
+      });
+
+      var cartToggle = document.getElementById('cartToggle');
+      if (cartToggle) {
+        cartToggle.addEventListener('click', toggleCart);
+      }
+      var cartClose = document.getElementById('cartClose');
+      if (cartClose) {
+        cartClose.addEventListener('click', closeCart);
+      }
+
+      if (addOrderBtn) {
+        addOrderBtn.addEventListener('click', function() {
+          saveOrder();
+        });
+      }
+
+      initializeProductButtons();
+      updateSummary();
+      loadLastOrder();
+      updateCart();
+    });
+  </script>
+</body>
+</html>
